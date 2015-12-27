@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="enryo_message_watch" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="left" text="メッセージを送る" textAlignment="center" id="hof-4f-9Rz">
+                            <color key="textColor" red="1" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="14"/>
+                        </label>
+                        <label width="1" alignment="left" text="Label" textAlignment="center" id="aLB-Es-9q2">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <table alignment="left" id="Egg-jV-gAZ">
+                            <items>
+                                <tableRow identifier="TheRow" id="Jbb-2J-bJs" customClass="TableRowController" customModule="enryo_message_watch_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="RGc-PI-h6X">
+                                        <items>
+                                            <label width="1" alignment="left" verticalAlignment="center" text="Label" id="60J-dN-ss4">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="messageTableLabel" destination="60J-dN-ss4" id="04q-Ig-T5j"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="messageDetailTable" destination="Egg-jV-gAZ" id="ctE-SN-Qo8"/>
+                        <outlet property="messageResultLabel" destination="aLB-Es-9q2" id="hax-tM-teV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="164" y="217"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="rjY-Ar-IMT">
+            <objects>
+                <glanceController spacing="0.0" topTemplateType="body1Group" bottomTemplateType="body6Footer" id="Sv0-Ai-Zie" customClass="GlanceController" customModule="enryo_message_watch" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Message Read" id="L4X-rR-8TO">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                        <group alignment="left" id="gv7-I2-MZq">
+                            <items>
+                                <label width="1" alignment="left" text="Alter Voice" textAlignment="left" id="1Ly-3f-eWf">
+                                    <color key="textColor" red="1" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label alignment="left" text="AppleWatch側ではiPhoneで登録済みの言葉を選択して音声に出力することが可能です。" id="odm-dt-VN6"/>
+                        <label alignment="left" text="画面をタップして開始して下さい" id="z6d-ab-ARr"/>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="164" y="514"/>
+        </scene>
+    </scenes>
+</document>
