@@ -29,6 +29,7 @@
 		DEC15E421C2E6EA100846A5E /* VoiceHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC15E411C2E6EA100846A5E /* VoiceHistory.swift */; };
 		DEC15E441C2E856600846A5E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC15E431C2E856600846A5E /* AVFoundation.framework */; };
 		DEC15E491C2EE95C00846A5E /* TableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC15E481C2EE95C00846A5E /* TableRowController.swift */; };
+		DEE0C7671C2FBDC90009DB26 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE0C7661C2FBDC90009DB26 /* WatchConnectivity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,7 @@
 		DEC15E431C2E856600846A5E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		DEC15E451C2EA10D00846A5E /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		DEC15E481C2EE95C00846A5E /* TableRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRowController.swift; sourceTree = "<group>"; };
+		DEE0C7661C2FBDC90009DB26 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE0C7671C2FBDC90009DB26 /* WatchConnectivity.framework in Frameworks */,
 				DEC15E441C2E856600846A5E /* AVFoundation.framework in Frameworks */,
 				2AB3955844BECA306C30B111 /* Pods.framework in Frameworks */,
 			);
@@ -169,6 +172,7 @@
 		D5C015DDA8F482867A3DC6F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DEE0C7661C2FBDC90009DB26 /* WatchConnectivity.framework */,
 				DEC15E451C2EA10D00846A5E /* AVKit.framework */,
 				DEC15E431C2E856600846A5E /* AVFoundation.framework */,
 				BFFCCD48621F5A71B8430D5A /* Pods.framework */,

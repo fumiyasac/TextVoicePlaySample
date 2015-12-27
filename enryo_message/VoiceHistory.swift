@@ -25,7 +25,7 @@ class VoiceHistory: Object {
     //音声で送信したデータ
     dynamic var deviceType = 1
     
-    //食べた日にち
+    //登録日
     dynamic var createDate = NSDate(timeIntervalSince1970: 0)
     
     //PrimaryKeyの設定
@@ -55,31 +55,5 @@ class VoiceHistory: Object {
             VoiceHistory.realm.add(self)
         }
     }
-    
-    //最新の記録データを取得をする（使用しないのでコメントアウト）
-    /*
-    static func fetchLastVoiceHistory() -> [String: String] {
-        
-        if let voice = realm.objects(VoiceHistory).sorted("id", ascending: true).first {
-            
-            let deviceType: String = String(voice.deviceType)
-            let createDate: String = String(voice.createDate)
-            let sendMessage: String = String(voice.formatText)
-            
-            return [
-                "device":deviceType,
-                "create":createDate,
-                "detail":sendMessage
-            ]
-        } else {
-            return [
-                "device":"",
-                "create":"",
-                "detail":""
-            ]
-        }
-
-    }
-    */
     
 }

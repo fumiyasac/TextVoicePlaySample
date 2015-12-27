@@ -11,6 +11,8 @@ import WatchKit
 class TableRowController: NSObject {
 
     //セル内のラベルと関連づけをする
+    //（注意1）「Custom Class」の部分をTableRowController.swiftにする
+    //（注意2）Row Controllerの「Indentifier」をTheRowにする
     @IBOutlet var messageTableLabel: WKInterfaceLabel!    
     
 }
