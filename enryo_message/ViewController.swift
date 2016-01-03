@@ -246,13 +246,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } else {
             
             //Realmにデータを1件登録する
-            let voiceHistoryObject = VoiceHistory.create()
-            voiceHistoryObject.formatText = self.targetVoice
-            voiceHistoryObject.deviceType = 1
-            voiceHistoryObject.createDate = NSDate()
+            //let voiceHistoryObject = VoiceHistory.create()
+            //voiceHistoryObject.formatText = self.targetVoice
+            //voiceHistoryObject.deviceType = 1
+            //voiceHistoryObject.createDate = NSDate()
             
             //登録処理
-            voiceHistoryObject.save()
+            //voiceHistoryObject.save()
             
             //話す内容をセット
             let utterance = AVSpeechUtterance(string: self.targetVoice)

@@ -8,6 +8,7 @@
 
 import UIKit
 import WatchConnectivity
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
